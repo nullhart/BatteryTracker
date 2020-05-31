@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- Load Form Definition -->
     <div v-for="(field,index) in SelectedForm" :key="index">
       <component v-bind:is="field.type"></component>
     </div>
@@ -12,10 +13,7 @@ export default {
   components: { DropDown },
   data() {
     return {
-      SelectedForm: [
-        { name: "Test Dropdown", type: "DropDown" },
-        { name: "Test Dropdown", type: "DropDown" }
-      ],
+      SelectedForm: [{ name: "Test Dropdown", type: "DropDown" }],
       foods: ["Select One", "1", "2"]
     };
   },
