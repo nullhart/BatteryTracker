@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deployProd": "yarn build && netlify deploy --prod",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
