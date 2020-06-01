@@ -39,4 +39,12 @@ export default {
 </script>
 
 <style lang="scss">
+.input {
+  width: 100%;
+}
+select {
+  background: #fff
+    url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB2aWV3Qm94PSIwIDAgMiAyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMCAwTDEgMkwyIDBIMFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=)
+    no-repeat scroll 95% center/10px 15px;
+}
 </style>
