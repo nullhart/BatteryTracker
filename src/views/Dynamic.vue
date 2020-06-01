@@ -2,7 +2,7 @@
   <div>
     <!-- Load Form Definition -->
     <div class="section" v-for="(section,index) in SelectedForm.form_sections" :key="index">
-      <div style="display: flex;">
+      <div style="display: flex; background-color: #424242;color: white;">
         <h2 style="margin: auto; padding: 0px;" @click="CollectFormData">{{section.section_label}}</h2>
       </div>
       <div class="field-container">
@@ -15,8 +15,13 @@
           v-bind:is="field.type"
         ></component>
       </div>
-      <button @click="save" style="font-size: 1.5em;margin: 0px;">Save</button>
     </div>
+
+    <button
+      @click="save"
+      style="font-size: 1.5em;    left: 50%;
+    transform: translate(-50%, 0);margin: auto; height: 55px; position: fixed; bottom: 0px;border-radius: 0px; max-width: 600px; "
+    >Save</button>
   </div>
 </template>
 
@@ -123,7 +128,7 @@ export default {
   display: grid;
 
   width: 100%;
-  height: 100%;
+  height: Calc(100% - 55px);
   overflow-y: scroll;
   margin: auto;
   max-width: 600px;
