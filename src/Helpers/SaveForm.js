@@ -1,4 +1,5 @@
-export default function (formData) {
+import { openDB } from "idb";
+export default async function (formData) {
     const db = await openDB("FormsDatabase", 1, {
         async upgrade(db) {
             // Create a store of objects
