@@ -2,8 +2,8 @@ module.exports = {
     // ...other vue-cli plugin options...
     pwa: {
         name: 'Battery Tracker',
-        themeColor: '#4DBA87',
-        msTileColor: '#000000',
+        themeColor: '#212121',
+        msTileColor: '#212121',
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black',
 
@@ -13,6 +13,7 @@ module.exports = {
         workboxOptions: {
             // swSrc is required in InjectManifest mode.
             swSrc: './src/service-worker.js',
+
 
         }
     }
