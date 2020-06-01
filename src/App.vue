@@ -21,7 +21,7 @@
     </div>
 
     <!-- Main Content -->
-    <router-view />
+    <router-view class="main-container" />
   </div>
 </template>
 
@@ -39,7 +39,45 @@ export default {
 <style lang="scss">
 @import "./assets/picnic.min.css";
 
+.main-container {
+  width: 100vw;
+  height: 100vh;
+}
+
 button {
   outline: none;
+  color: white;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: white;
+  border: none;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+input,
+textarea,
+select {
+  background-color: #424242 !important;
+}
+
+::placeholder,
+::-webkit-resizer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.553);
+  background-color: #424242;
 }
 </style>
