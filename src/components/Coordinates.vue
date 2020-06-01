@@ -1,11 +1,10 @@
 <template>
-  <div style="width: 100%;display: grid;">
+  <div @click="SetLocation" style="width: 100%;display: grid;">
     <label for="lat">Latitude</label>
-    <input name="lat" v-model="lat" />
+    <input disabled name="lat" v-model="lat" />
 
     <label for="long">Longitude</label>
-    <input name="long" v-model="long" />
-    <button style="margin: auto;margin-top: 10px;" @click="SetLocation">Get Location</button>
+    <input disabled name="long" v-model="long" />
   </div>
 </template>
 
