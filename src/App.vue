@@ -39,6 +39,12 @@ export default {
 <style lang="scss">
 @import "./assets/picnic.min.css";
 
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: #121212;
+}
 .main-container {
   width: 100vw;
   height: 100vh;
