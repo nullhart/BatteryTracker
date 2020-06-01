@@ -3,6 +3,7 @@
     <label for="NumBox">{{data.label}}</label>
     <input
       type="number"
+      pattern="[0-9]*"
       @change="$emit('updateValue', FieldValue)"
       v-model="FieldValue"
       :placeholder="data.hint"
