@@ -2,7 +2,7 @@
   <div>
     <!-- Load Form Definition -->
     <div class="section" v-for="(section,index) in SelectedForm.form_sections" :key="index">
-      <div style=" background-color: red;display: flex;">
+      <div style="display: flex;">
         <h2 style="margin: auto; padding: 0px;" @click="CollectFormData">{{section.section_label}}</h2>
       </div>
       <div class="field-container">
@@ -15,6 +15,7 @@
           v-bind:is="field.type"
         ></component>
       </div>
+      <button @click="save" style="font-size: 1.5em;margin: 0px;">Save</button>
     </div>
   </div>
 </template>
@@ -24,10 +25,13 @@ import DropDown from "../components/DropDown";
 import TextBox from "../components/TextBox";
 import TextArea from "../components/TextArea";
 import NumBox from "../components/NumBox";
+import Coordinates from "../components/Coordinates";
+
+import SaveForm from "../Helpers/SaveForm";
 
 export default {
   name: "Dynamic",
-  components: { DropDown, TextBox, TextArea, NumBox },
+  components: { DropDown, TextBox, TextArea, NumBox, Coordinates },
   data() {
     return {
       SelectedForm: {
@@ -84,6 +88,16 @@ export default {
                 default_value: "",
                 hint: "Type Number...",
                 value: "",
+                min: "",
+                max: "",
+                required: false
+              },
+              {
+                name: "Example Coordinates",
+                label: "Example Coordinates Label",
+                type: "Coordinates",
+                lat: "",
+                long: "",
                 required: false
               }
             ]
@@ -95,6 +109,9 @@ export default {
   methods: {
     CollectFormData: function() {
       alert(JSON.stringify(this.SelectedForm));
+    },
+    save: function() {
+      SaveForm(JSON.parse(JSON.stringify(this.SelectedForm)));
     }
   },
   created() {}
@@ -104,11 +121,13 @@ export default {
 <style lang="scss">
 .section {
   display: grid;
-  width: 100vw;
-  height: 90vh;
+
+  width: 100%;
+  height: 100%;
   overflow-y: scroll;
   margin: auto;
   max-width: 600px;
+
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr;
 }
@@ -118,7 +137,13 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
+
+.field-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #212121;
+}
 .section:nth-child(odd) {
-  background-color: lightgrey;
+  // background-color: whitesmoke;
 }
 </style>
