@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     UpdateIsAvailable: false,
+    spinner: false
   },
   mutations: {
   },
