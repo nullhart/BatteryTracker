@@ -2,21 +2,32 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Dynamic from '../views/Dynamic'
 import Home from '../views/Home'
+import Settings from '../views/Settings'
 
 
 Vue.use(VueRouter)
 
 const routes = [
+
   {
     path: '/',
-    name: 'Dynamic',
-    component: Dynamic
+    name: 'Home',
+    meta: { label: "Mobile Forms" },
+    component: Home
   },
   {
-    path: '/home',
-    name: 'Home',
-    component: Home
-  }
+    path: '/NewForm',
+    name: 'Dynamic',
+    meta: { label: "Edit Form" },
+    component: Dynamic
+  },
+
+  {
+    path: '/Settings',
+    name: 'Settings',
+    meta: { label: "Settings" },
+    component: Settings
+  },
 
 ]
 
