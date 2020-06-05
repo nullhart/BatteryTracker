@@ -9,7 +9,7 @@
     </div>
 
     <!-- Only shows when update is available -->
-    <div class="modal">
+    <div id="dark" class="modal">
       <input id="modal_1" type="checkbox" :checked="$store.state.UpdateIsAvailable" />
       <label for="modal_1" class="overlay"></label>
       <article>
@@ -31,7 +31,7 @@
     <!-- TopBar -->
     <div class="top-bar">
       <div @click="NavAction" class="back-button">
-        <font-awesome-icon style="margin: auto;" :icon="NavIcon()" size="2x" />
+        <font-awesome-icon style="margin: auto;cursor:pointer" :icon="NavIcon()" size="2x" />
       </div>
 
       <div class="header">
@@ -83,7 +83,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/picnic.min.css";
+$picnic-white: #1b2431;
+.modal {
+  color: white;
+}
+
+footer > .button {
+  color: white;
+}
+@import "../node_modules/picnic/src/picnic.scss";
 
 .loader-container {
   display: grid;
@@ -151,7 +159,8 @@ circle {
   width: 100%;
   top: 0px;
   display: grid;
-  background-color: #424242;
+  filter: contrast(110%);
+  background-color: #1b2431;
   color: white;
   max-width: 900px;
   margin: auto;
@@ -197,7 +206,7 @@ circle {
 }
 html,
 body {
-  background-color: #121212;
+  background-color: #1b2431;
   margin: 0px;
   padding: 0px;
 }
@@ -214,6 +223,7 @@ button {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  box-shadow: none;
 }
 
 input,
@@ -234,7 +244,8 @@ label {
 input,
 textarea,
 select {
-  background-color: #424242 !important;
+  background-color: #1b2431 !important;
+  filter: contrast(110%);
 }
 
 ::placeholder,
@@ -242,6 +253,6 @@ select {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.553);
-  background-color: #424242;
+  background-color: #1b2431;
 }
 </style>
