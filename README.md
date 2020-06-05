@@ -4,7 +4,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a3a0a434-dbfb-4944-8a57-355e7fbf55d9/deploy-status)](https://app.netlify.com/sites/batterytracker/deploys)
 
 
-<img align="center" src="https://i.ibb.co/2Kh9JKV/2.png" alt="Screenshot"
+<img align="center" src="https://i.ibb.co/z2jpwBp/home.png" alt="Screenshot"
 	title="Home Screen" width="250" />
 
 
