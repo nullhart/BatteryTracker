@@ -1,7 +1,7 @@
 <template>
   <div class="settings-container">
     <div></div>
-    <button @click="ResetDB">delete Local DB 💣</button>
+    <button class="reset-button" @click="ResetDB">delete Local DB 💣</button>
   </div>
 </template>
 
@@ -30,5 +30,10 @@ export default {
   margin-right: auto;
   max-width: 900px;
   grid-template-rows: 1fr 60px;
+}
+
+.reset-button {
+  margin: 0px;
+  border-radius: 0px;
 }
 </style>
