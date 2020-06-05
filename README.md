@@ -1,4 +1,12 @@
-# battracker
+# Battery Tracker
+
+
+![Home Screen](https://ibb.co/VB916Bn)
+
+
+
+
+
 
 ## Project setup
 ```
