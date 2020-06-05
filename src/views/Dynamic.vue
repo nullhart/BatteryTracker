@@ -39,7 +39,9 @@ export default {
       SelectedForm: {
         form_name: "Example Form",
         form_label: "Example Form",
+        form_status: "Completed",
         description: "This is an example form description",
+        location: "Parachute Office",
         created: "2020-05-31T18:07:56.215Z",
         owner: "bmastrud",
         modified: "2020-05-31T18:07:56.215Z",
@@ -120,7 +122,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .section {
   display: grid;
 
@@ -142,7 +144,7 @@ export default {
 .field-container {
   max-width: 900px;
   width: 100%;
-  background-color: #212121;
+  background-color: transparent;
 }
 .section:nth-child(odd) {
   // background-color: whitesmoke;
