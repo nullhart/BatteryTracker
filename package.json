@@ -1,5 +1,5 @@
 {
-  "name": "battracker",
+  "name": "mobile_forms",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "core-js": "^3.6.5",
     "idb": "^5.0.4",
+    "picnic": "^6.5.2",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
