@@ -1,9 +1,10 @@
 # Battery Tracker
 
 
-![Home Screen](https://ibb.co/VB916Bn)
 
 
+<img src="https://i.ibb.co/2Kh9JKV/2.png" alt="Screenshot"
+	title="Home Screen" width="250" />
 
 
 
