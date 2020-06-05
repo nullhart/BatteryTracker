@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    meta: { label: "Mobile Forms" },
+    meta: { label: "Battery Tracker" },
     component: Home
   },
   {
