@@ -1,12 +1,13 @@
-# Battery Tracker
+<h1 align="center">Battery Tracker</h1>
 
 
 
-
-<img src="https://i.ibb.co/2Kh9JKV/2.png" alt="Screenshot"
+<img align="center" src="https://i.ibb.co/2Kh9JKV/2.png" alt="Screenshot"
 	title="Home Screen" width="250" />
 
 
+
+___
 
 
 ## Project setup
