@@ -32,9 +32,11 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "abstract",
   base: process.env.BASE_URL,
   routes
 })
+router.replace('/')
+
 
 export default router
