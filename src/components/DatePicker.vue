@@ -1,13 +1,7 @@
 <template>
   <div>
-    <label :for="data.name" style="user-">{{data.label}}</label>
-    <input
-      @change="$emit('updateValue', FieldValue)"
-      v-model="FieldValue"
-      type="date"
-      :id="data.name"
-      :name="data.name"
-    />
+    <label class="date-picker-label">{{data.label}}</label>
+    <input @change="$emit('updateValue', FieldValue)" v-model="FieldValue" type="date" />
   </div>
 </template>
 
@@ -32,12 +26,35 @@ export default {
 </script>
 
 <style>
+.date-picker-label {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3px;
+}
+
+input[type="date"] {
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1.2em;
+  outline-color: #ccc;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+[type="date"]::-webkit-datetime-edit {
+  user-select: none;
+  background: #f6f6f6;
+}
+
 [type="date"]::-webkit-inner-spin-button {
   display: none;
 }
 [type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   width: 100%;
+  left: 0px;
   opacity: 0;
 }
 </style>
