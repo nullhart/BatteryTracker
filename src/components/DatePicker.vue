@@ -40,7 +40,11 @@ input[type="date"] {
   outline-color: #ccc;
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: none;
+}
+
+input[type="date"]:focus {
+  outline-color: #0079c1;
 }
 
 [type="date"]::-webkit-datetime-edit {
