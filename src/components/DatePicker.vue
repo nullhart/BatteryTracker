@@ -49,7 +49,6 @@ input[type="date"]:focus {
 
 [type="date"]::-webkit-datetime-edit {
   user-select: none;
-  background: #f6f6f6;
 }
 
 [type="date"]::-webkit-inner-spin-button {
