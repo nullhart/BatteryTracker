@@ -304,6 +304,7 @@ export default {
 
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  background-color: #1b2431;
 }
 
 .fields {
