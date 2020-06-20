@@ -143,6 +143,7 @@ export default {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  background-color: #1b2431;
 }
 
 .list-item {
