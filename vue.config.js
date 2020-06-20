@@ -2,8 +2,8 @@ module.exports = {
     // ...other vue-cli plugin options...
     pwa: {
         name: 'Mobile Forms V2',
-        themeColor: '#111b29',
-        msTileColor: '#111b29',
+        themeColor: '#8e44ad',
+        msTileColor: '#8e44ad',
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black-translucent',
 
