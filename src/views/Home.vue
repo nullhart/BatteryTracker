@@ -109,7 +109,7 @@ export default {
   bottom: 0px;
   display: grid;
   width: 100%;
-  height: 60px;
+  height: 80px;
   max-width: 900px;
   filter: contrast(110%);
   background-color: #1b2431;
