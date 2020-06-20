@@ -206,7 +206,7 @@ circle {
 }
 html,
 body {
-  background-color: #1b2431;
+  background-color: #111B29;
   margin: 0px;
   padding: 0px;
 }
