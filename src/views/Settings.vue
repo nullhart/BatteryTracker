@@ -30,6 +30,7 @@ export default {
   margin-right: auto;
   max-width: 900px;
   grid-template-rows: 1fr 60px;
+  background-color: #1b2431;
 }
 
 .reset-button {
